@@ -2,6 +2,7 @@ package com.campusdual.classroom;
 
 public abstract class Merchandise {
 
+	protected String location;
 	protected String name;
 	protected String uniqueId;
 	protected String responsibleId;
@@ -25,6 +26,10 @@ public abstract class Merchandise {
 		this.area = area;
 		this.shelf = shelf;
 		this.quantity = quantity;
+	}
+
+	public Merchandise(String location) {
+		this.location = location;
 	}
 
 	public String getLocation() {
